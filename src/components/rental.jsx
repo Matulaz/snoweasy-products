@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 
 function Rental()  {
 
@@ -11,8 +10,6 @@ function Rental()  {
     tipo: "Ski",
     cant: 5
     }
-
-    const [count, setCount] = useState(0)
 
     
     return (

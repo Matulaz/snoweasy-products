@@ -1,23 +1,39 @@
 import React from 'react'
-import { useState } from 'react'
 
 function Pases()  {
 
     const pases = {
-        nombre: "Valle de Las Leñas",
-        detino: "Las Leñas",
-        pax: "Mayor",
-        cant: 4
+        destinos: ["Las Leñas", "Chapelco", "Cerro Castor"],
+        pax: ["Mayor","Menor", "Universitario", "Infant", "Senior", "Mayor Principiante","Menor Principiante"],
+        cant: [2,3,4,5,6,7]
     }
 
+    const recorrerDestinos = 
+            pases.destinos.map((d)=>
+            <option>{d}</option>
+        );
+    const recorrerPax = 
+        pases.pax.map((p)=>
+        <option>{p}</option>
+    );
+    const recorrerCant = 
+        pases.cant.map((q)=>
+        <option>{q}</option>
+    );
 
-    const [count, setCount] = useState(0)    
 
 
     return (
         <div className="Pases">
-            <h1>Hola soy los Pases</h1>
-
+            <select>
+                {recorrerDestinos}
+            </select>
+            <select>
+                {recorrerPax}
+            </select>
+            <select>
+                {recorrerCant}
+            </select>
         </div>
 
 
