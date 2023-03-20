@@ -7,7 +7,7 @@ function App() {
 
 
 
-  const [section, setSection] = useState("Hola soy el Section")
+  const [section, setSection] = useState("(aqui se renderiza el contenido de cada boton)")
 
   const botonRental = () =>{
 
@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="App">
 
-      <button onClick = {botonRental}>Renderizar Componente Rental</button>
-      <button onClick = {botonPases}>Renderizar Componente Pases</button>
+      <button className="btnPrincipal" onClick = {botonRental}>Rental</button>
+      <button className="btnPrincipal" onClick = {botonPases}>Pases</button>
       <h1>{ section }</h1>
 
     </div>

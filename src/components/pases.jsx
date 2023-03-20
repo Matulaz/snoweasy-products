@@ -24,16 +24,33 @@ function Pases()  {
 
 
     return (
-        <div className="Pases">
+        <div className="btnPrincipalActivo Pases">
+
+        <div>
+            <h1>Hola soy los Pases</h1>
+            <label for="pasesDestinos">Centro de Ski
             <select>
-                {recorrerDestinos}
+                { recorrerDestinos }
             </select>
+            </label>
+
+            <label for="pasesPax">Tipo de Pases
             <select>
-                {recorrerPax}
+                { recorrerPax }
             </select>
+            </label>
+
+            <label for="pasesCant">Cantidad de dias de Pases
             <select>
-                {recorrerCant}
+                { recorrerCant }
             </select>
+            </label>
+        </div>
+        
+        <div>
+        <button className="btnSearch">Buscar</button>
+        </div>
+
         </div>
 
 
