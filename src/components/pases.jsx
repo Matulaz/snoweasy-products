@@ -1,11 +1,11 @@
 import React from 'react'
+import Contadores from './contadores'
 
 function Pases()  {
 
     const pases = {
         destinos: ["Las Leñas", "Chapelco", "Cerro Castor"],
         pax: ["Mayor","Menor", "Universitario", "Infant", "Senior", "Mayor Principiante","Menor Principiante"],
-        cant: [2,3,4,5,6,7]
     }
 
     const recorrerDestinos = 
@@ -16,10 +16,7 @@ function Pases()  {
         pases.pax.map((p)=>
         <option>{p}</option>
     );
-    const recorrerCant = 
-        pases.cant.map((q)=>
-        <option>{q}</option>
-    );
+
 
 
 
@@ -27,21 +24,23 @@ function Pases()  {
         <div className="btnPrincipalActivo Pases">
 
             <label for="pasesDestinos">Centro de Ski
+            <p className="descripcion">Argentina</p>
             <select>
                 { recorrerDestinos }
             </select>
             </label>
 
             <label for="pasesPax">Tipo de Pases
+            <p className="descripcion">Segun la edad del pasajero</p>
             <select>
                 { recorrerPax }
             </select>
             </label>
 
-            <label for="pasesCant">Cantidad de dias de Pases
-            <select>
-                { recorrerCant }
-            </select>
+            <label for="pasesCant">Cantidad
+            <p className="descripcion">Dias de Medios de Elevacion</p>
+            <Contadores />
+
             </label>
 
         

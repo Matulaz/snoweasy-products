@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Rental from './components/rental'
 import Pases from './components/pases'
+import Contadores from './components/contadores'
 
 function App() {
 

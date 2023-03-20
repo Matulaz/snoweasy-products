@@ -1,0 +1,25 @@
+.Contadores{
+    display:flex;
+    background-color:white;
+    color:#4D455D;
+    height: 53px;
+    border-radius: 5px;
+    margin:10px 10px 0px 10px;
+    align-items: center;
+}
+
+.btn-contadores{
+    background-color: white;    
+    color:#4D455D;
+    margin-left:20px;
+    margin-right:20px;
+    width:60px;
+    font-size: 1em;
+    padding:8px;
+    transition: background-color 0.25s linear,color 0.25s linear;
+}
+
+.descripcion{
+    color:rgb(159, 159, 159);
+    font-size:0.7em;
+}

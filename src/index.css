@@ -39,9 +39,7 @@ button {
   transition: border-color 0.25s;
 
 }
-button:hover {
-  background-color: #59506b;
-}
+
 button:focus,
 button:focus-visible {
   /* outline: 4px auto #59506b; */
@@ -65,28 +63,33 @@ select{
   text-align: center;
   font-size:1em;  
   display:block;
+  height: 53px;
+  width:200px
 }
 
 .btnPrincipal{
-  width:50%
+  width:50%;
+  font-size:2em;
 }
 
 .btnPrincipalActivo{
   width:100%;
   display:flex;
-  flex-direction: row;
+  flex-direction: row; 
+  
 }
 
 .btnSearch{
   background-color:#fa931e;
-  padding: 5px 80px;
-  margin:15px;
+  padding: 5px 60px;
+  margin:50px 0px 0px 10px;
   font-size:0.6em;
   font-weight: 400;
   border-radius: 10px;
   box-shadow: 8px 8px 16px -5px rgba(0,0,0,0.46);
   -webkit-box-shadow: 8px 8px 16px -5px rgba(0,0,0,0.46);
   -moz-box-shadow: 8px 8px 16px -5px rgba(0,0,0,0.46);
+  height: 53px;
 }
 
 .btnSearch:hover {
