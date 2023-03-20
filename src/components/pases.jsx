@@ -26,8 +26,6 @@ function Pases()  {
     return (
         <div className="btnPrincipalActivo Pases">
 
-        <div>
-            <h1>Hola soy los Pases</h1>
             <label for="pasesDestinos">Centro de Ski
             <select>
                 { recorrerDestinos }
@@ -45,7 +43,7 @@ function Pases()  {
                 { recorrerCant }
             </select>
             </label>
-        </div>
+
         
         <div>
         <button className="btnSearch">Buscar</button>

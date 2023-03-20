@@ -43,8 +43,7 @@ function Rental()  {
     
     return (
         <div className="btnPrincipalActivo Rental">
-            <h1>Hola soy el Rental</h1>
-        <div>
+
             <label for="rentalOrigen">Rental
             <select>
                 {recorrerOrigen}
@@ -68,9 +67,9 @@ function Rental()  {
                 {recorrerPax}
             </select>
             </label>
-        </div>
 
-        <div>
+
+
 
             <label for="rentalCant">Cantidad de Dias
             <select>
@@ -83,9 +82,10 @@ function Rental()  {
                 {recorrerSeguro}
             </select>
             </label>
-        </div>
 
+        <div>
         <button className="btnSearch">Buscar</button>
+        </div>
 
         </div>
 
