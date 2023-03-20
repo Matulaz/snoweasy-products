@@ -42,10 +42,11 @@ button {
 button:hover {
   background-color: #59506b;
 }
-/* button:focus,
+button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
+  /* outline: 4px auto #59506b; */
+  border-bottom:#F5E9CF solid 2px;
+} 
 
 label{
   font-size:0.5em;
@@ -83,6 +84,9 @@ select{
   font-size:0.6em;
   font-weight: 400;
   border-radius: 10px;
+  box-shadow: 8px 8px 16px -5px rgba(0,0,0,0.46);
+  -webkit-box-shadow: 8px 8px 16px -5px rgba(0,0,0,0.46);
+  -moz-box-shadow: 8px 8px 16px -5px rgba(0,0,0,0.46);
 }
 
 .btnSearch:hover {
@@ -99,4 +103,5 @@ select{
   button {
     background-color: #f9f9f9;
   }
+
 }
